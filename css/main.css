@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+#wrap{width:100%; margin:0 auto;}
+.inner{width:1200px; margin:0 auto;}
+
+/* header */
+
+header{width:100%; height:130px; background:#fff;}
+
+
+header > .inner.top{position:relative;}
+header > .inner.top>a{text-align:center; padding-left:550px;}
+header > .inner.top ul{position:absolute; right:0; top:20px; overflow:hidden;}
+header > .inner.top > ul li{float:left; margin-left:10px; width:90px; height:30px; line-height:30px; border-radius:10px; background:#ebe0cc; text-align:center; font-size:16px; font-weight: normal;}
+header > .inner.top > ul li a{display:block; color:#25292d;}
+header > .inner.top > ul li a:hover{background-color: #25292d; color: #ebe0cc; border-radius:10px;}
+
+/*article */
+
+article section .visual{width:100%; height:950px; background:url(../img/visual_tbg.jpg) no-repeat center center;}
+section .visual h1{padding-top:320px; text-align:center; color:#fff; font-family:'SCoreDream'; font-size:55px; font-weight:600; line-height:145%;}
+section .visual p{padding-top:65px; text-align:center; color:#fff; font-size:50px; font-family:'SCoreDream'; font-weight:300;}
+
+section .con_new{position:relative; width:100%; height:1200px;}
+section .con_new .inner{padding-top:200px;}
+section .con_new p{width:300px; height:70px; margin-left:-150px; line-height:70px; border-radius:10px; text-align:center; position:absolute; bottom:100px; left:50%; background:#f7bb00; font-size:32px; font-family:'SCoreDream'; font-weight:600;}
+section .con_new p a{display:block; color:#1c1c1e;}
+section .con_new p img{position: absolute; top: 50%; right: 7%; transform: translateY(-50%) scale(1.8);}
+
+section .con_new p:hover a{background: #25292d; color: #fff; border-radius:10px;}
+section .con_new p:hover img{filter:invert(100%);}
+
+section .menu{width:100%; height:700px;  background:#ebe0cc;}
+section .menu h1{font-size:70px; text-align:center; color:#1c1c1e; font-family:'SBAggroM'; padding-top:100px;}
+section .menu ul{overflow:hidden; margin-top:70px;}
+section .menu ul li{float:left; width:220px; height:310px; border-radius:10px; background:#fff;  margin-right:25px;}
+section .menu ul li:last-child{margin-right:0;}
+section .menu .inner li a{display:block; font-family:'SCoreDream'; font-weight:900;}
+section .menu .inner li a p{width:100%; height:90px; line-height:145%; background:#f7bb00; text-align:center; vertical-align:middle; color:#fff; font-size:24px; font-family:'SCoreDream'; font-weight:500; border-radius:10px 10px 0 0; padding-top:10px; box-sizing:border-box; -webket-box-sizing:border-box;}
+section .menu .inner li:hover a p{background: #25292d; color: #f7bb00;}
+section .menu .inner li:hover a span img{transform:scale(1.1); transition: .3s;}
+
+section .NE{overflow:hidden; height:510px;}
+section .NE .notice,
+section .NE .event{margin-top:105px; width:590px; height:250px; border:7px solid #f7bb00; position:relative; box-sizing:border-box; -webket-box-sizing:border-box;}
+
+section .NE .notice{float:left;}
+section .NE .event{float:right;}
+
+section .NE .notice p,
+section .NE .event p{position:absolute; top:-7px; left:-7px; background:#fff; width:250px; height:70px; color:#f7bb00; font-size:60px; font-family:'SBAggroM';}
+
+section .NE .notice ul,
+section .NE .event ul{line-height:55px; font-size:20px; padding:90px 0 0 15px; color:#242424;}
+
+section .NE .notice ul li:hover span,
+section .NE .event ul li:hover span{text-decoration:underline; font-weight: bold;}
+
+section .sns{width:100%; height:700px; background:#f4f4f4;}
+section .sns h2{text-align:center; font-family:'SBAggroM'; font-size:60px; padding-top:80px;}
+section .sns h3{text-align:center; font-family:'SBAggroM'; font-size:35px;}
+
+section .sns .inner{overflow:hidden; padding-top:90px;}
+section .sns .inner li{float:left; margin-right:28px; box-sizing:border-box; -webket-box-sizing:border-box;}
+section .sns .inner li:nth-child(4){margin-right:0;}
+section .sns .inner li{overflow: hidden; position: relative;}
+section .sns .inner li span{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; font-size: 24px; font-weight: 600; letter-spacing: 4px; display: none;}
+
+section .sns .inner li:hover a img{transform: scale(1.15); transition: .3s;}  
+section .sns .inner li:hover a:after{content: ""; position: absolute; top: 0;left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);} 
+section .sns .inner li:hover span{display: block;}
+
+section .box{height:350px;}
+section .box ul{overflow:hidden; margin-top:120px;}
+section .box ul li{float:left;position:relative; width:400px; height:220px; padding:30px; color:#000; box-sizing:border-box; -webket-box-sizing:border-box;}
+
+section .box ul li .bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;}
+
+section .box ul li:nth-child(1) .bg{background:#cfad5f;}
+section .box ul li:nth-child(2) .bg{background:#636363;}
+section .box ul li:nth-child(3) .bg{background:#e40012;}
+
+section .box ul li:hover .bg:after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.45);}
+
+section .box ul li p{font-size:35px; font-family:'SBAggroM'; color:#fff;}
+section .box ul li h6{position:absolute; right:0; bottom:0;}
+section .box ul li span{position:absolute; left:30px; bottom:30px;}
+
+
+footer{height:350px; background:#636363; overflow: hidden;}
+footer .f_top{background:#e5e5e5; height:90px; line-height:90px; overflow:hidden;}
+footer .f_top .inner span{float:left; font-size:45px; color:#e40012; font-family:'SBAggroL';}
+footer .f_top .inner ul{float:left;}
+footer .f_top .inner ul li{display:inline-block;}
+footer .f_top .inner .text li a{padding-left:80px; line-height:90px; font-size:18px; font-weight:300; color:#000;}
+
+footer .f_top .inner ul li a:hover{font-weight: bold;}
+
+footer .f_top .inner .sns{float:right; padding-top:19px; box-sizing:border-box;}
+footer .f_top .inner .sns li{padding-left:10px;}
+
+footer .f_bottom{height:260px; position:relative;}
+footer .f_bottom .inner{color:#ddd; font-family:'SCoreDream'; font-weight:300; font-size:16px; line-height:23px;}
+footer .f_bottom .inner > span{float:left; width:310px;}
+footer .f_bottom .inner div{float:left; width:890px; padding-top:40px;}
+footer .f_bottom .inner div p{font-weight:100;}
+footer .f_bottom .inner div h5{position:absolute; bottom:50px; font-weight:400;}
+footer .f_bottom .inner div h5 span{color:#f7bb00;}
+
+
+
+
+
